@@ -1,0 +1,174 @@
+@font-face {
+	font-family: Adam;
+	src: url('../fonts/adam.otf')
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#cover-container {
+	height: 100%;
+	width: 100%;
+
+	.fullscreen {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		min-width: 100%;
+		overflow: hidden;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.background {
+		background-size: 100%, 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	#b1 {
+		background: url('../images/blur1.jpg');
+		z-index: -1;
+	}
+	#b2 {
+		background: url('../images/blur2.jpg');
+		z-index: -2;
+	}
+	#b3 {
+		background: url('../images/blur3.jpg');
+		z-index: -3;
+	}
+
+}
+
+
+#cover-content {
+	@include vertical-align;
+	height: 500px;
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	font-weight: 100;
+	color: #eeeeee;
+
+	* {
+		position: relative;
+		text-align: center; 
+	}
+	
+	h2 {
+		margin: 0 0 0 0;
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: 100;
+
+		text-align: center;
+		margin-bottom: 5px;
+		left: -300px;
+	}
+
+	.hr {
+		height: 0px;
+		border-top: 1px solid #CCC;
+	}
+
+	h1 {
+		margin: 6px;
+		left: 0px; 
+		font-size: 60px;
+		font-weight: 700;
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	.extra {
+		left: -175px;
+		top: -20px;
+		font-size: 18px;
+		color: #555555;//lighten(#25333B, 10%);
+	}
+
+	#main-body {
+		.section {
+			height: 600px;
+			width: 100%;
+			//background: #777777;
+		}
+	}
+}
+
+
+#content {
+	.layer:before {
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	.layer:nth-child(odd) {
+		background-image: url('../images/blur1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		.layer-content {
+			color: #DDDDDD;
+		}
+	}
+	.layer:nth-child(odd):before {
+		background-color: rgba(#2f343A, 0.5);
+	}
+	
+	.layer:nth-child(even) {
+		background-image: url('../images/blur2.jpg');
+		.layer-content {
+			color: #333333;
+		}
+	}
+	.layer:nth-child(even):before {
+		background-color: rgba(#BdB69C, 0.5);
+	}
+
+	.layer {
+		min-height: 500px;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+
+		.layer-content {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			margin-right:auto;
+			transform: translateY(-50%);
+			color: black;
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+
+			h1 {
+				font-size: 55px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-top: 0px;
+			}
+		}
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+{% extends 'homepage/base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+	<script src={% static 'homepage/javascripts/blurTransition.js' %}></script>
+{% endblock %}
+
+{% block body %}
+	<div id='cover-container'>
+		<div id='cover' class='fullscreen'>
+			<div id='cover-content' class='vcenter'>
+				<h2>Brendan Le</h1>
+				<div class='hr'></div>
+				<h1>PERSONAL WEBSITE</h1>
+				<div class='extra'>front-end & back-end</div>
+	
+				<div id='main-body'>
+					<div class='section'></div>
+				</div>
+			</div>
+		</div>
+		<div id='backgrounds'>
+			<div id='b1' class='fullscreen background'></div>
+			<div id='b2' class='fullscreen background'></div>
+			<div id='b3' class='fullscreen background'></div>
+		</div>
+
+		<div id='content'>
+			<div id='about' class='layer'>
+				<div class='layer-content'>
+					<h1>About Me</h1>	
+					<p>Some information about myself</p>
+				</div>
+			</div>
+			<div class='layer'>
+				<div class='layer-content'>
+					<h1>Personal Projects</h1>
+				</div>
+			</div>
+			<div class='layer'>
+				<div class='layer-content'>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}
