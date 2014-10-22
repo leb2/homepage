@@ -69,7 +69,7 @@ html, body {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 100;
-  text-align: center;
+  text-align: left;
   margin-bottom: 5px;
 }
 /* line 79, ../sass/screen.scss */
@@ -88,16 +88,17 @@ html, body {
 }
 /* line 93, ../sass/screen.scss */
 #cover-content .extra {
+  left: 4px;
   font-size: 18px;
   color: #555555;
 }
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 #cover-content #main-body .section {
   height: 600px;
   width: 100%;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 #content .layer:before {
   content: '';
   display: block;
@@ -105,41 +106,41 @@ html, body {
   position: absolute;
   width: 100%;
 }
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #content .layer:nth-child(odd) {
   background-image: url("../images/blur1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #content .layer:nth-child(odd) .layer-content {
   color: #DDDDDD;
 }
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #content .layer:nth-child(odd):before {
   background-color: rgba(47, 52, 58, 0.5);
 }
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #content .layer:nth-child(even) {
   background-image: url("../images/blur2.jpg");
 }
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #content .layer:nth-child(even) .layer-content {
   color: #333333;
 }
-/* line 136, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #content .layer:nth-child(even):before {
   background-color: rgba(189, 182, 156, 0.5);
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #content .layer {
   min-height: 500px;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #content .layer .layer-content {
   position: absolute;
   left: 0;
@@ -152,8 +153,9 @@ html, body {
   font-weight: 300;
   font-size: 18px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #content .layer .layer-content h1 {
+  margin-bottom: 15px;
   font-size: 55px;
   font-weight: 700;
   text-transform: uppercase;
