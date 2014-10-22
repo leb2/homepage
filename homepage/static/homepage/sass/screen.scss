@@ -49,19 +49,20 @@ html, body {
 		z-index: -3;
 	}
 
+
 }
 
 
 #cover-content {
 	@include vertical-align;
-	height: 500px;
+	height: 200px;
 	font-family: 'Open Sans', 'Helvetica', sans-serif;
 	font-weight: 100;
 	color: #eeeeee;
 
 	* {
 		position: relative;
-		text-align: center; 
+		text-align: left; 
 	}
 	
 	h2 {
@@ -72,17 +73,16 @@ html, body {
 
 		text-align: center;
 		margin-bottom: 5px;
-		left: -300px;
 	}
 
-	.hr {
-		height: 0px;
+
+	hr {
+		margin: 0px !important;
 		border-top: 1px solid #CCC;
 	}
 
 	h1 {
-		margin: 6px;
-		left: 0px; 
+		margin: 0 0 0 0;
 		font-size: 60px;
 		font-weight: 700;
 		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -91,8 +91,6 @@ html, body {
 	}
 
 	.extra {
-		left: -175px;
-		top: -20px;
 		font-size: 18px;
 		color: #555555;//lighten(#25333B, 10%);
 	}

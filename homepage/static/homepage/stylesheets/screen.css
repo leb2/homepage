@@ -46,24 +46,24 @@ html, body {
   z-index: -3;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 #cover-content {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 500px;
+  height: 200px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   font-weight: 100;
   color: #eeeeee;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #cover-content * {
   position: relative;
-  text-align: center;
+  text-align: left;
 }
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #cover-content h2 {
   margin: 0 0 0 0;
   text-transform: uppercase;
@@ -71,17 +71,15 @@ html, body {
   font-weight: 100;
   text-align: center;
   margin-bottom: 5px;
-  left: -300px;
 }
-/* line 78, ../sass/screen.scss */
-#cover-content .hr {
-  height: 0px;
+/* line 79, ../sass/screen.scss */
+#cover-content hr {
+  margin: 0px !important;
   border-top: 1px solid #CCC;
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 #cover-content h1 {
-  margin: 6px;
-  left: 0px;
+  margin: 0 0 0 0;
   font-size: 60px;
   font-weight: 700;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -90,18 +88,16 @@ html, body {
 }
 /* line 93, ../sass/screen.scss */
 #cover-content .extra {
-  left: -175px;
-  top: -20px;
   font-size: 18px;
   color: #555555;
 }
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #cover-content #main-body .section {
   height: 600px;
   width: 100%;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #content .layer:before {
   content: '';
   display: block;
@@ -109,41 +105,41 @@ html, body {
   position: absolute;
   width: 100%;
 }
-/* line 119, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #content .layer:nth-child(odd) {
   background-image: url("../images/blur1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 124, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 #content .layer:nth-child(odd) .layer-content {
   color: #DDDDDD;
 }
-/* line 128, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #content .layer:nth-child(odd):before {
   background-color: rgba(47, 52, 58, 0.5);
 }
-/* line 132, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #content .layer:nth-child(even) {
   background-image: url("../images/blur2.jpg");
 }
-/* line 134, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #content .layer:nth-child(even) .layer-content {
   color: #333333;
 }
-/* line 138, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 #content .layer:nth-child(even):before {
   background-color: rgba(189, 182, 156, 0.5);
 }
-/* line 142, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #content .layer {
   min-height: 500px;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-/* line 148, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 #content .layer .layer-content {
   position: absolute;
   left: 0;
@@ -156,7 +152,7 @@ html, body {
   font-weight: 300;
   font-size: 18px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #content .layer .layer-content h1 {
   font-size: 55px;
   font-weight: 700;
